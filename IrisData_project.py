@@ -81,7 +81,6 @@ else:
         f.write(text_to_save)
     #   f.close() # not really needed as 'with' takes care of this
   
-    ######################################
 
 
     ################################################################################
@@ -90,15 +89,16 @@ else:
     # plotting
     ################################################################################
 
-    #Tk().withdraw()
 
     # layout keyword controls column x row boxplot arrangement - just for
     # display
     # we want plots to be grouped by species for clearer visualization of the
     # distribution of the Iris dataset
     
+    print('\n\nGenerating statistical plots and saving them...\n')
+
     df.boxplot(by=df.columns[4],grid=False, layout=(1,4), rot=90) # can use fontsize=X to control font
-    plt.savefig('fig1_600.png',dpi=600, bbox_inches='tight')
+    plt.savefig(os.path.join(folder_path, 'fig1.png'), dpi=600, bbox_inches='tight')
 
     # alternative method to control font sizes
     # https://stackoverflow.com/questions/3899980/how-to-change-the-font-size-on-a-matplotlib-plot
@@ -123,57 +123,42 @@ else:
     # exists on its own.  need for the rest of plots to avoid drawing on top of
     # each other
     # kernel density estimation (kde) is clearer than histogram (hist)
-    #figure2 = plt.figure()
+    plt.figure()
     pandas.plotting.scatter_matrix(df,color=['black','yellow','blue'], diagonal='kde', alpha=1)
     plt.suptitle('Scatter matrix of flower measurements with kernel density estimation')
-    plt.savefig('fig2.png', dpi=600, bbox_inches='tight')
+    plt.savefig(os.path.join(folder_path, 'fig2.png'), dpi=600, bbox_inches='tight')
     
     # parallel coordinates as an orthogonal method for multivariate analysis,
     # grouped by species
-    figure3 = plt.figure()
+    plt.figure()
     pandas.plotting.parallel_coordinates(df, df.columns[4])
-    figure3.suptitle('Parallel coordinates of flower measurements, grouped by species')
-    figure3.savefig('fig3.png', dpi=600, bbox_inches='tight')
+    plt.suptitle('Parallel coordinates of flower measurements, grouped by species')
+    plt.savefig(os.path.join(folder_path, 'fig3.png'), dpi=600, bbox_inches='tight')
 
     # lag plots - if the measurements are truly by nature (not genetics), then
     # the Iris dataset should be random. is this the case?
     # let's see if there is any structure to the data.
     # the standard Iris dataset has 5 columns with the last (species) being
     # text, so just plot the first 4 numeric columns separately
-    figure4= plt.figure()
+    plt.figure()
 
     for i in range(len(df.columns) - 1):
         plt.subplot(2,2,i + 1, title=df.columns[i])
         pandas.plotting.lag_plot(df[df.columns[i]])
 
     plt.suptitle('Lag plots of flower measurements')
-    figure4.savefig('fig4.png', dpi=600, bbox_inches='tight')
+    plt.savefig(os.path.join(folder_path, 'fig4.png'), dpi=600, bbox_inches='tight')
+
+    # all done
+    print('\nScript has completed. Good bye.\n')
+    
     ###########################
-    # show all plots at once
+    # if needed, show all plots at once. may need to uncomment the multiple plt.figure() lines
     # plt.show()
     ###########################
 
-    #import matplotlib
-    #from matplotlib.backends.backend_pdf import PdfPages
-    #matplotlib.use('cairo')
-
-    #pp = PdfPages(os.path.join(folder_path, 'multipage.pdf'))
-
-    #figs = [plt.figure(n) for n in plt.get_fignums()]
-    #for fig in figs:
-    #    fig.savefig(pp)
-
-    #plt.savefig(pp, format='pdf')
-
-    # or:
-
-    #pp.savefig()
-    #pp.close()
 
 
-
-# 1. save automatically all plots/tables to root folder_date_time
-# 2. plot for multivariate analysis + correlation
 # 3. https://www.datacamp.com/community/tutorials/exploratory-data-analysis-python
 # 4. https://www.kaggleusercontent.com/kf/734137/eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2In0..QI3UhhnbF6VVJ3Y76Ao37w.2jBaA-73Kfg-RfnokXRh60Yih-HW2B-qO8hsPtoemUzti9GDRUktRrHtfqxJ0HIEQa1_4Y9jUdNKbAxHiHAcZfLcKSKuL4-uj8mAE6KZLnxDvSfDwCAQnJNVc6EvJPyUdwsiawCmKzF1x3satQRR8w.ZWtvVdjVUtyOw8zb-V8XYQ/__results__.html#Feature-to-feature-relationship
 
