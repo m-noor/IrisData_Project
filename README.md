@@ -27,7 +27,7 @@ Some images to give a background are in the table below - all images were taken 
 
 For those of us not well-versed in flowers, the image below shows the sepal and petal:
 
-![Iris sepal petal](https://www.math.umd.edu/~petersd/666/html/iris_with_labels.jpg)
+<p style="text-align: center;"> ![Iris sepal petal](https://www.math.umd.edu/~petersd/666/html/iris_with_labels.jpg) </p>
 
 
 
