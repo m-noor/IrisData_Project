@@ -16,7 +16,7 @@ Briefly, in terms of the Iris dataset itself, the dataset captures the measureme
 
 In the machine learning field, this dataset can be used to train different statistical algorithms and perform a prediction on which species a set of flower measurements belong to.
 
-Some images to give a background are in the table below - all images were taken from/linked to the [Wikipedia page](https://en.wikipedia.org/wiki/Iris_flower_data_set) , and are confirmed to be freely shareable.
+Some images to give a background are in the table below - all images were taken from/linked to the [Wikipedia page](https://en.wikipedia.org/wiki/Iris_flower_data_set), and are confirmed to be freely shareable.
 
 
 |R. A. Fisher <br>  ![R. A. Fisher](https://upload.wikimedia.org/wikipedia/commons/4/46/R._A._Fischer.jpg)  | *Iris setosa* <br> ![Iris setosa](https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Kosaciec_szczecinkowaty_Iris_setosa.jpg/180px-Kosaciec_szczecinkowaty_Iris_setosa.jpg) |
