@@ -25,7 +25,7 @@ Some images to give a background are in the table below - all images were taken 
 |***Iris versicolor*** <br> ![Iris versicolor](https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Iris_versicolor_3.jpg/320px-Iris_versicolor_3.jpg)  | ***Iris virginica*** <br> ![Iris virginica](https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Iris_virginica.jpg/295px-Iris_virginica.jpg)|
 
 For those of us not well-versed in flowers, the image below shows the sepal and petal:
-<p align="center">![Iris sepal petal](https://www.math.umd.edu/~petersd/666/html/iris_with_labels.jpg)</p>
+<p align="center"> ![Iris sepal petal](https://www.math.umd.edu/~petersd/666/html/iris_with_labels.jpg) </p>
 
 
 
