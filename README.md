@@ -75,8 +75,9 @@ The script performs certain tasks in a logical way as detailed below:
 At a quick glance at [iris_data_summary.txt](outputs/iris_data_summary.txt), we can see that there are no missing values (150 measurements in total). In addition, petal length displays a high variance confirmed by the boxplot. The other values, while useful, are better represented by the boxplot as well - a picture is worth a thousand words!
 
 **Dataset description**
+
 |value |sepal_length|sepal_width|petal_length|petal_width|
-|--|--|--|--|--|
+|--|:--:|:--:|:--:|:--:|
 |count|150|150|150|150|
 |mean|5.8|3.1|3.8|1.2|
 |standard deviation|0.8|0.4|1.8|0.8|
