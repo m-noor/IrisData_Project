@@ -35,15 +35,22 @@ For those of us not well-versed in flowers, the image below shows the sepal and 
 
 ### Rationale for chosen method
 Among the options considered for designing the project solution was:
+
 1. a graphical user interface whereby users can load their desired dataset and the plots will be displayed within the window. Not pursued because of requirements of installation of wxPython library and time to run.
+
 2. a web-based interface with Plotly. Not pursued due to the relative complexity in writing the code in MVC model, and the code in Python is converted to HTML/JavaScript anyway. If there is no language restriction, writing the code in JavaScript would be the most straightforward option
+
 3. a simple, commandline interface with no user options except for letting users to choose the specific dataset. All outputs are automatically saved to the user's root drive under a subfolder named according to the current time. This was the approach taken in this project.
 
 Imported libraries are:
 1. pandas - provides easy manipulation of datasets (dataframes) and obtain descriptive statistical information
+
 2. matplotlib.pyplot - generate graphical plots. Note that pandas already call matplotlib implicitly for plotting
+
 3. tkinter - provides access to OS open file dialog box
+
 4. os, sys, pathlib - to obtain root drive and perform directory operations in an OS-independent way
+
 5. datetime - to allow reading current date and time. Only used to generate a name for folder to save outputs to
 
 ### Description of script execution
@@ -59,7 +66,13 @@ The script performs certain tasks in a logical way as detailed below:
 
 3. os and sys libraries are called together with datetime to make a string containing the root folder and current date and time, so that pathlib.mkdir can be invoked to make a folder to save the output files (e.g. C:\20180402_1424). For confirmation, this path is also printed out to the screen so that the user know the exact path.
 
-4. xxx
+4. A second string, containing the descriptive statistics calculated by pandas, is then constructed and written into a file called [iris_data_summary.txt](outputs/iris_data_summary.txt).
+
+5. Since four plots are generated at 600 dpi resolution, there can be some lag until files are actually written. Therefore, an update on the script status is printed out first and then updated again after saving. The plots generated are:
+
+* [fig1.png](outputs/fig1.png) - a boxplot that provides a visual summary of measurement distribution grouped by the *Iris* species.
+* [fig2.png](outputs/fig2.png) - a scatter matrix for pairwise multivariate analysis to determine relationship between each of the measurements. This augments the pairwise correlation calculated in [iris_data_summary.txt](outputs/iris_data_summary.txt).
+* [fig3.png](outputs/fig3.png) - a parallel coordinates plot as an orthogonal method for multivariate analysis, grouped by species. From the plot, it is clear that the petal length of *I. setosa* is distinct from the other two species. This can be used as the first step to distinguish the species. In contrast, the sepal length is not a useful discriminant criterion. To distinguish between *I. versicolor* and *I. virginica*, it is possible to use petal length and petal width as (collectively) the petal dimensions of *I. virginica* are larger than *I. versicolor*.
 
 ## Results and Discussion
 
