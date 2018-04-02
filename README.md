@@ -28,6 +28,19 @@ For those of us not well-versed in flowers, the image below shows the sepal and 
 <p align="center"> ![Iris sepal petal](https://www.math.umd.edu/~petersd/666/html/iris_with_labels.jpg) </p>
 
 
+Normal Text
+
+<p align="center">
+  <b>Some Links:</b><br>
+  <a href="#">Link 1</a> |
+  <a href="#">Link 2</a> |
+  <a href="#">Link 3</a>
+  <br><br>
+  <img src="http://s.4cdn.org/image/title/105.gif">
+</p>
+
+Normal text
+
 
 <sepal image...>
 
