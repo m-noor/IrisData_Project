@@ -51,11 +51,11 @@ The script performs certain tasks in a logical way as detailed below:
 1. Ask user for the location of the Iris dataset using tkinter dialog. In case the user clicks 'Cancel' in the dialog, the script exits without running the rest of the code.
 2. The actual reading of the csv file is done by pandas into a dataframe (df). Following this, multiple statistics can be conveniently obtained including the mean, standard deviation and overall data distribution. The correlation between each of the *Iris* flower measurements are also performed. Information on the various methods to calculate pairwise correlation was obtained from [Statistics Solutions](https://www.statisticssolutions.com/correlation-pearson-kendall-spearman/) and [Minitab Support](http://support.minitab.com/en-us/minitab-express/1/help-and-how-to/modeling-statistics/regression/supporting-topics/basics/a-comparison-of-the-pearson-and-spearman-correlation-methods/).
 
-In general:
-* Pearson (default): assumes linearity, normal distribution and homoscedasticity (data equally distributed about the regression line
-* Kendall: does not seem to be apply here because there is no ranking
-* Spearman: non-parametric, no assumption about data distribution. Indicates monotonic relationship (i.e.  rate of change that is not necessarily constant.
-* S > P values indicate monotonic, non-linear relationship
+  In general:
+  * Pearson (default): assumes linearity, normal distribution and homoscedasticity (data equally distributed about the regression line
+  * Kendall: does not seem to be apply here because there is no ranking
+  * Spearman: non-parametric, no assumption about data distribution. Indicates monotonic relationship (i.e.  rate of change that is not necessarily constant.
+  * S > P values indicate monotonic, non-linear relationship
 
 
 ## Results and Discussion
