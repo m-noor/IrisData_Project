@@ -66,16 +66,17 @@ The script performs certain tasks in a logical way as detailed below:
 
 3. os and sys libraries are called together with datetime to make a string containing the root folder and current date and time, so that pathlib.mkdir can be invoked to make a folder to save the output files (e.g. C:\20180402_1424). For confirmation, this path is also printed out to the screen so that the user know the exact path.
 
-4. A second string, containing the descriptive statistics calculated by pandas, is then constructed and written into a file called [iris_data_summary.txt](outputs/iris_data_summary.txt).
+4. A second string, containing the descriptive statistics calculated by pandas, is then constructed and written into a file called [iris_data_summary.txt](outputs/iris_data_summary.txt). At a quick glance, we can see that there are no missing values (150 measurements in total). In addition, petal length displays a high variance confirmed by the boxplot. The other values, while useful, are better represented by the boxplot as well - a picture is worth a thousand words!
 
 5. Since four plots are generated at 600 dpi resolution, there can be some lag until files are actually written. Therefore, an update on the script status is printed out first and then updated again after saving. The plots generated are:
 
 * [fig1.png](outputs/fig1.png) - a boxplot that provides a visual summary of measurement distribution grouped by the *Iris* species. Some observations that can be made are:
- * the petal dimensions of *I. setosa* are smaller than the other two species. The corresponding dataset is also quite tightly clustered, especially given the significantly wider distribution of *I. versicolor* and *I. virginica* petal length.
- * most of the dataset grouped by species are not normally distributed (except for *I. setosa* sepal dimensions).
- * some of the datapoints are actually outliers more than 1.5 of the respective inter-quatile range (1.5 x IQR). These could be caused by either actual natural distribution, or by error in classification.
+  * the petal dimensions of *I. setosa* are smaller than the other two species. The corresponding dataset is also quite tightly clustered, especially given the significantly wider distribution of *I. versicolor* and *I. virginica* petal length.
+  * most of the dataset grouped by species are not normally distributed (except for *I. setosa* sepal dimensions).
+  * some of the datapoints are actually outliers more than 1.5 of the respective inter-quatile range (1.5 x IQR). These could be caused by either actual natural distribution, or by error in classification.
 
-* [fig2.png](outputs/fig2.png) - a scatter matrix for pairwise multivariate analysis to determine relationship between each of the measurements. This augments the pairwise correlation calculated in [iris_data_summary.txt](outputs/iris_data_summary.txt).
+* [fig2.png](outputs/fig2.png) - a scatter matrix for pairwise multivariate analysis to determine relationship between each of the measurements. This augments the pairwise correlation calculated in [iris_data_summary.txt](outputs/iris_data_summary.txt). The suspicion that the datapoints are not normally distribution (above) is confirmed in the scatter matrix kde (kernel density estimation). We can see that there is a bimodal distribution for petal dimensions, whereas the sepal width is normally distributed. We can also see there is a linear relationship between sepal length and petal length, sepal length and petal width, and petal length and petal width. From the [iris_data_summary.txt](outputs/iris_data_summary.txt), the corresponding Pearson and Spearman correlations are 0.87/0.88, 0.82/0.83, and 0.96/0.94. The others display poor correlations of < 0.5.
+
 * [fig3.png](outputs/fig3.png) - a parallel coordinates plot as an orthogonal method for multivariate analysis, grouped by species. From the plot, it is clear that the petal length of *I. setosa* is distinct from the other two species. This can be used as the first step to distinguish the species. In contrast, the sepal length is not a useful discriminant criterion. To distinguish between *I. versicolor* and *I. virginica*, it is possible to use petal length and petal width as (collectively) the petal dimensions of *I. virginica* are larger than *I. versicolor*.
 
 ## Results and Discussion
