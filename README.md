@@ -19,23 +19,25 @@ In the machine learning field, this dataset can be used to train different stati
 Some images to give a background are in the table below - all images were taken from/linked to the (Wikipedia)[https://en.wikipedia.org/wiki/Iris_flower_data_set] page, and are confirmed to be freely shareable.
 
 
-<p align="center">
 |R. A. Fisher <br>  ![R. A. Fisher](https://upload.wikimedia.org/wikipedia/commons/4/46/R._A._Fischer.jpg)  | *Iris setosa* <br> ![Iris setosa](https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Kosaciec_szczecinkowaty_Iris_setosa.jpg/180px-Kosaciec_szczecinkowaty_Iris_setosa.jpg) |
 |:---:|:---:|
 |***Iris versicolor*** <br> ![Iris versicolor](https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Iris_versicolor_3.jpg/320px-Iris_versicolor_3.jpg)  | ***Iris virginica*** <br> ![Iris virginica](https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Iris_virginica.jpg/295px-Iris_virginica.jpg)|
 
 For those of us not well-versed in flowers, the image below shows the sepal and petal, as linked to (University of Maryland Math Department)[https://www.math.umd.edu/~petersd/666/html/iris_with_labels.jpg]:
 
-</p>
-
 <p align="center">
 <img src="https://www.math.umd.edu/~petersd/666/html/iris_with_labels.jpg">
 </p>
 
 
-
-
 ## Methods
+
+### Rationale for chosen method
+Among the options considered for designing the project solution was:
+1. a graphical user interface whereby users can load their desired dataset and the plots will be displayed within the window. Not pursued because of requirements of installation of wxPython library and time to run.
+2. a web-based interface with Plotly. Not pursued due to the relative complexity in writing the code in MVC model, and the code in Python is converted to HTML/JavaScript anyway. If there is no language restriction, writing the code in JavaScript would be the most straightforward option
+3. a simple, commandline interface with no user options except for letting users to choose the specific dataset. All outputs are automatically saved to the user's root drive under a subfolder named according to the current time. This was the approach taken in this project.
+
 
 ....
 
