@@ -39,8 +39,24 @@ Among the options considered for designing the project solution was:
 2. a web-based interface with Plotly. Not pursued due to the relative complexity in writing the code in MVC model, and the code in Python is converted to HTML/JavaScript anyway. If there is no language restriction, writing the code in JavaScript would be the most straightforward option
 3. a simple, commandline interface with no user options except for letting users to choose the specific dataset. All outputs are automatically saved to the user's root drive under a subfolder named according to the current time. This was the approach taken in this project.
 
+Imported libraries are:
+1. pandas - provides easy manipulation of datasets (dataframes) and obtain descriptive statistical information
+2. matplotlib.pyplot - generate graphical plots. Note that pandas already call matplotlib implicitly for plotting
+3. tkinter - provides access to OS open file dialog box
+4. os, sys, pathlib - to obtain root drive and perform directory operations in an OS-independent way
+5. datetime - to allow reading current date and time. Only used to generate a name for folder to save outputs to
 
-....
+### Description of script execution
+The script performs certain tasks in a logical way as detailed below:
+1. Ask user for the location of the Iris dataset using tkinter dialog. In case the user clicks 'Cancel' in the dialog, the script exits without running the rest of the code.
+2. The actual reading of the csv file is done by pandas into a dataframe (df). Following this, multiple statistics can be conveniently obtained including the mean, standard deviation and overall data distribution. The correlation between each of the *Iris* flower measurements are also performed. Information on the various methods to calculate pairwise correlation was obtained from [Statistics Solutions](https://www.statisticssolutions.com/correlation-pearson-kendall-spearman/) and [Minitab Support](http://support.minitab.com/en-us/minitab-express/1/help-and-how-to/modeling-statistics/regression/supporting-topics/basics/a-comparison-of-the-pearson-and-spearman-correlation-methods/).
+
+In general:
+* Pearson (default): assumes linearity, normal distribution and homoscedasticity (data equally distributed about the regression line
+* Kendall: does not seem to be apply here because there is no ranking
+* Spearman: non-parametric, no assumption about data distribution. Indicates monotonic relationship (i.e.  rate of change that is not necessarily constant.
+* S > P values indicate monotonic, non-linear relationship
+
 
 ## Results and Discussion
 
