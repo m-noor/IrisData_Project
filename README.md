@@ -16,8 +16,8 @@ Briefly, in terms of the Iris dataset itself, the dataset captures the measureme
 In the machine learning field, this dataset can be used to train different statistical algorithms and perform a prediction on which species a set of flower measurements belong to.
 
 
-![GitHub Logo](/images/logo.png)
-Format: ![Alt Text](url)
+![R. A. Fisher](https://upload.wikimedia.org/wikipedia/commons/4/46/R._A._Fischer.jpg)
+Format: ![Potrait of R. A. Fisher](https://upload.wikimedia.org/wikipedia/commons/4/46/R._A._Fischer.jpg)
 
 
 <sepal image...>
