@@ -1,5 +1,5 @@
 
-# IrisData_Project
+# Iris Data Project
 Programming and Scripting module - Project on the Iris dataset
 
 *By: Mohamed Noor - 2018*
