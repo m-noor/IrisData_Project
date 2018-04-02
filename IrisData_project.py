@@ -13,13 +13,14 @@ import pathlib
 # %matplotlib inline # not needed unless in Jupyter Notebook
 
 #root = tk.Tk()
-Tk().withdraw() # otherwise, the tk window is kept open.  Need to comment this
-#so that program exits gracefully after closing matplotlib and other windows
-file_open_path = filedialog.askopenfilename()
+Tk().withdraw() # otherwise, the tk window is kept open.  Need to comment this out
+# if using plt.show so that program exits gracefully after closing matplotlib and other windows
 
 ####################################################
 # start by reading dataset and do exploratory analysis
 ####################################################
+file_open_path = filedialog.askopenfilename()
+
 if file_open_path == '':
     raise SystemExit # no file to open --> exit program
 else:
@@ -99,6 +100,7 @@ else:
 
     df.boxplot(by=df.columns[4],grid=False, layout=(1,4), rot=90) # can use fontsize=X to control font
     plt.savefig(os.path.join(folder_path, 'fig1.png'), dpi=600, bbox_inches='tight')
+    # https://matplotlib.org/api/_as_gen/matplotlib.pyplot.savefig.html#matplotlib.pyplot.savefig
 
     # alternative method to control font sizes
     # https://stackoverflow.com/questions/3899980/how-to-change-the-font-size-on-a-matplotlib-plot
@@ -115,11 +117,9 @@ else:
     #plt.rc('figure', titlesize=SMALL_SIZE)  # fontsize of the figure title
 
     
-    # https://matplotlib.org/api/_as_gen/matplotlib.pyplot.savefig.html#matplotlib.pyplot.savefig
-
     # scatterplots for pairwise multivariate analysis to determine relationship
     # between each of the measurements
-    # plt.figure() - no need to add this because the previous plot by pandas
+    # plt.figure() - no need to add this here because the previous plot by pandas
     # exists on its own.  need for the rest of plots to avoid drawing on top of
     # each other
     # kernel density estimation (kde) is clearer than histogram (hist)
@@ -150,45 +150,11 @@ else:
     plt.savefig(os.path.join(folder_path, 'fig4.png'), dpi=600, bbox_inches='tight')
 
     # all done
-    print('\nScript has completed. Good bye.\n')
+    print(folder_path)
+    print('\nOutput files were written to: ' + folder_path + '\nScript has completed. Good bye.\n')
     
     ###########################
     # if needed, show all plots at once. may need to uncomment the multiple plt.figure() lines
     # plt.show()
     ###########################
 
-
-
-# 3. https://www.datacamp.com/community/tutorials/exploratory-data-analysis-python
-# 4. https://www.kaggleusercontent.com/kf/734137/eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2In0..QI3UhhnbF6VVJ3Y76Ao37w.2jBaA-73Kfg-RfnokXRh60Yih-HW2B-qO8hsPtoemUzti9GDRUktRrHtfqxJ0HIEQa1_4Y9jUdNKbAxHiHAcZfLcKSKuL4-uj8mAE6KZLnxDvSfDwCAQnJNVc6EvJPyUdwsiawCmKzF1x3satQRR8w.ZWtvVdjVUtyOw8zb-V8XYQ/__results__.html#Feature-to-feature-relationship
-
-
-
-############################################################
-## bin section
-############################################################
-
-# # Calculating Correlations for Multivariate Data (done)
-# http://python-for-multivariate-analysis.readthedocs.io/a_little_book_of_python_for_multivariate_analysis.html#calculating-correlations-for-multivariate-data
-
-
-# predict species from a given set of measurements
-
-#do_prediction = str(input('would you like to predict...? Y for Yes, N for No: '))
-
-#if do_prediction == 'Y':
-#    print('yes, predict')
-    
-#    # svm with sklearn
-
-
-#else:
-#    print('no prediction, exiting')
-#    raise SystemExit
-
-
-# saving matplotlib figs:
-# https://stackoverflow.com/questions/26368876/saving-all-open-matplotlib-figures-in-one-file-at-once?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa
-# https://stackoverflow.com/questions/9622163/save-plot-to-image-file-instead-of-displaying-it-using-matplotlib?rq=1
-
-############################################################
