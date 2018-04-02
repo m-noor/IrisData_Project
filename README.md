@@ -16,7 +16,7 @@ Briefly, in terms of the Iris dataset itself, the dataset captures the measureme
 
 In the machine learning field, this dataset can be used to train different statistical algorithms and perform a prediction on which species a set of flower measurements belong to.
 
-Some images to give a background - all images were taken from the (Wikipedia)[https://en.wikipedia.org/wiki/Iris_flower_data_set] page, and are confirmed to be freely shareable.
+Some images to give a background are in the table below - all images were taken from the (Wikipedia)[https://en.wikipedia.org/wiki/Iris_flower_data_set] page, and are confirmed to be freely shareable.
 
 
 
@@ -25,7 +25,9 @@ Some images to give a background - all images were taken from the (Wikipedia)[ht
 |***Iris versicolor***  ![Iris versicolor](https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Iris_versicolor_3.jpg/320px-Iris_versicolor_3.jpg)  | ***Iris virginica*** ![enter image description here](https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Iris_virginica.jpg/295px-Iris_virginica.jpg)|
 
 
+For those of us not well-versed in flowers, the image below shows the sepal and petal:
 
+![Iris sepal petal] (https://www.math.umd.edu/~petersd/666/html/iris_pca.html#1)
 
 
 
