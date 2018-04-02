@@ -18,7 +18,8 @@ In the machine learning field, this dataset can be used to train different stati
 Some images to give a background - all images were taken from the (Wikipedia)[https://en.wikipedia.org/wiki/Iris_flower_data_set] page, and are confirmed to be freely shareable.
 
 
-|R. A. Fisher  ![R. A. Fisher](https://upload.wikimedia.org/wikipedia/commons/4/46/R._A._Fischer.jpg)| *Iris setosa* ![*Iris setosa*](https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Kosaciec_szczecinkowaty_Iris_setosa.jpg/180px-Kosaciec_szczecinkowaty_Iris_setosa.jpg)|
+|R. A. Fisher  
+![R. A. Fisher](https://upload.wikimedia.org/wikipedia/commons/4/46/R._A._Fischer.jpg)| *Iris setosa* ![*Iris setosa*](https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Kosaciec_szczecinkowaty_Iris_setosa.jpg/180px-Kosaciec_szczecinkowaty_Iris_setosa.jpg)|
 | ------------- | ------------- |
 | *Iris versicolor* ![*Iris versicolor*](https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Iris_versicolor_3.jpg/320px-Iris_versicolor_3.jpg)  | *Iris virginica* ![*Iris virginica*](https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Iris_virginica.jpg/295px-Iris_virginica.jpg)  |
 
