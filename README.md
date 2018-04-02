@@ -22,12 +22,12 @@ Some images to give a background are in the table below - all images were taken 
 
 |R. A. Fisher  ![R. A. Fisher](https://upload.wikimedia.org/wikipedia/commons/4/46/R._A._Fischer.jpg)  | *Iris setosa* ![Iris setosa](https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Kosaciec_szczecinkowaty_Iris_setosa.jpg/180px-Kosaciec_szczecinkowaty_Iris_setosa.jpg) |
 |:---:|:---:|
-|***Iris versicolor***  ![Iris versicolor](https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Iris_versicolor_3.jpg/320px-Iris_versicolor_3.jpg)  | ***Iris virginica*** ![enter image description here](https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Iris_virginica.jpg/295px-Iris_virginica.jpg)|
+|***Iris versicolor***  ![Iris versicolor](https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Iris_versicolor_3.jpg/320px-Iris_versicolor_3.jpg)  | ***Iris virginica*** ![Iris virginica](https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Iris_virginica.jpg/295px-Iris_virginica.jpg)|
 
 
 For those of us not well-versed in flowers, the image below shows the sepal and petal:
 
-![Iris sepal petal](https://www.math.umd.edu/~petersd/666/html/iris_pca.html#1)
+![Iris sepal petal](https://www.math.umd.edu/~petersd/666/html/iris_with_labels.jpg)
 
 
 
