@@ -7,7 +7,6 @@ Programming and Scripting module - Project on the Iris dataset
 ## Introduction
 This project related to the Fisher's Iris dataset, as obtained from the [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/iris)<a href="inputs/UCI Machine Learning Repository_ Iris Data Set.pdf"> (webpage snapshot)</a>.
 
-
 To analyze the dataset (in statistics term: exploratory data analysis), a script was written in Python 3.6.3 with Visual Studio Community 2017. The main and other well-known libraries were utilized to read the Iris dataset and output the analysis results.
 (see the following section below).
 
@@ -43,7 +42,7 @@ Among the options considered for designing the project solution was:
 
 3. a simple, commandline interface with no user options except for letting users to choose the specific dataset. All outputs are automatically saved to the user's root drive under a subfolder named according to the current time. This was the approach taken in this project.
 
-Imported libraries are:
+The imported libraries are:
 1. pandas - provides easy manipulation of datasets (dataframes) and obtain descriptive statistical information
 
 2. matplotlib.pyplot - generate graphical plots. Note that pandas already call matplotlib implicitly for plotting
@@ -75,7 +74,7 @@ The script performs certain tasks in a logical way as detailed below:
 
 At a quick glance at [iris_data_summary.txt](outputs/iris_data_summary.txt), we can see that there are no missing values (150 measurements in total). In addition, petal length displays a high variance confirmed by the boxplot. The other values, while useful, are better represented by the boxplot as well - a picture is worth a thousand words!
 
-**Dataset description**
+**Dataset description (rounded to one decimal place in keeping with the measurements)**
 
 |value |sepal_length|sepal_width|petal_length|petal_width|
 |--|:--:|:--:|:--:|:--:|
