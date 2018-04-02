@@ -26,9 +26,9 @@ Some images to give a background are in the table below - all images were taken 
 
 For those of us not well-versed in flowers, the image below shows the sepal and petal:
 <p align="center">
-  <i>Linked to (University of Maryland Math Department)</i>*[https://www.math.umd.edu/~petersd/666/html/iris_with_labels.jpg]
+Linked to (University of Maryland Math Department)[https://www.math.umd.edu/~petersd/666/html/iris_with_labels.jpg]
   
-<img src="https://www.math.umd.edu/~petersd/666/html/iris_with_labels.jpg"
+<img src="https://www.math.umd.edu/~petersd/666/html/iris_with_labels.jpg">
 </p>
 
 
