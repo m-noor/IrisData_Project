@@ -138,4 +138,12 @@ The *Iris* dataset is easy to work with, as there are no missing values or unusu
 
 If required, this Python script can be easily modified for other datasets, allowing for a higher code reusability.
 
+## Appendix: Usage instructions
 
+[The script](IrisData_project.py) relies on the `pandas`, `matplotlib` and `tkinter` libraries for calculating the statistical values and for plotting graphs, and therefore these libraries must be installed prior to running the script. If not, the following error will occur:
+
+```
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ModuleNotFoundError: No module named 'xxxx'
+```
