@@ -147,3 +147,6 @@ Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 ModuleNotFoundError: No module named 'xxxx'
 ```
+To run the script, open up a shell and just type python IrisData_project.py
+
+############## END OF FILE ##############
