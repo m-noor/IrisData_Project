@@ -150,6 +150,8 @@ ModuleNotFoundError: No module named 'xxxx'
 ```
 To run the script, open up a shell and just type `python IrisData_project.py`.
 An open file dialog box will then appear - choose an Iris data file in .csv format.
-
+The three tables displayed in the Results and Discussion section will be printed to screen and saved to a file named iris_data_summary.txt.
+Following this, the figures will be generated and saved as well.
+The path is xxxx
 
 ############## END OF FILE ##############
