@@ -154,7 +154,7 @@ else:
     print('\nOutput files were written to: ' + folder_path + '\nScript has completed. Good bye.\n')
     
     ###########################
-    # if needed, show all plots at once. may need to uncomment the multiple plt.figure() lines
+    # if needed, show all plots at once. may need to uncomment the multiple plt.figure() lines above.
     # plt.show()
     ###########################
 
