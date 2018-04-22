@@ -45,13 +45,13 @@ Among the options considered for designing the project solution was:
 The imported libraries are:
 1. `pandas` - provides easy manipulation of datasets (dataframes) and obtain descriptive statistical information
 
-2. `matplotlib.pyplot` - generate graphical plots. Note that pandas already call matplotlib implicitly for plotting
+2. `matplotlib.pyplot` - generate graphical plots. Note that pandas already call matplotlib implicitly for plotting, although using this library allows for more finetuning than from `pandas`
 
-3. `tkinter` - provides access to OS open file dialog box
+3. `tkinter` - provides access to the OS open file dialog box
 
-4. `os, sys, pathlib` - to obtain root drive and perform directory operations in an OS-independent way
+4. `os, sys, pathlib` - to obtain root drive and perform directory operations in an OS-independent way (*the Python way*)
 
-5. `datetime` - to allow reading current date and time. Only used to generate a name for folder to save outputs to
+5. `datetime` - to allow reading current date and time. Only used to generate a name for a folder to save outputs to
 
 ### Description of script execution
 The script performs certain tasks in a logical way as detailed below:
@@ -62,9 +62,9 @@ The script performs certain tasks in a logical way as detailed below:
   * Pearson (default): assumes linearity, normal distribution and homoscedasticity (data equally distributed about the regression line
   * Kendall: does not seem to be apply here because there is no ranking
   * Spearman: non-parametric, no assumption about data distribution. Indicates monotonic relationship (i.e.  rate of change that is not necessarily constant.
-  * S > P values indicate monotonic, non-linear relationship
+  * A (Spearman correlation > P correlation) value indicate a monotonic, non-linear relationship
 
-3. `os` and `sys` libraries are called together with datetime to make a string containing the root folder and current date and time, so that `pathlib.mkdir` can be invoked to make a folder to save the output files (e.g. C:\20180402_1424). For confirmation, this path is also printed out to the screen so that the user know the exact path.
+3. `os` and `sys` libraries are called together with datetime to make a string containing the root folder and current date and time, so that `pathlib.mkdir` can be invoked to make a folder to save the output files (e.g. C:\20180402_1424). For confirmation, this path is also printed out to the screen so that the user knows the exact path (instead of searching the whole disk).
 
 4. A second string, containing the descriptive statistics calculated by `pandas`, is then constructed and written into a file called [iris_data_summary.txt](outputs/iris_data_summary.txt).
 
