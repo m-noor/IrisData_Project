@@ -164,7 +164,7 @@ To run the script, open up a shell and just type `python IrisData_project.py`.
 An open file dialog box will then appear - choose an Iris data file in .csv format.
 The three tables (Tables 1-3) displayed in the Results and Discussion section will be printed to screen and saved to a file named iris_data_summary.txt.
 Following this, the Figures 1-4 will be generated and saved as well.
-The outputs will all be saved on the root drive (in Windows, usually C:\) to a folder named based on the current date (YYYYMMDD) and time (HHMM) - *e.g.* C:\20180402_1424.
+The outputs will all be saved on the root drive (in Windows, usually C:\) to a folder named based on the current date (YYYYMMDD) and time (HHMM) - *e.g.* C:\20180402_1424. This assures a unique location each time the script is run, provided there is no time change (*e.g.* summer time).
 
 
 ############## END OF FILE ##############
