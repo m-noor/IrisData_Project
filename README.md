@@ -158,7 +158,7 @@ __Figure 3. A parallel coordinates plot indicating the clustering of flower dime
 <img src="http://1.bp.blogspot.com/-CFi-OrzyX6E/T9NSSHXP5RI/AAAAAAAAAFE/g6QRrB3kwCQ/s600/white_noise.png">
 </p>
 
-__Figure 4. (Top) The *Iris* dataset as a whole is not random, indicating another factor in play, possible genetics. (Bottom) A lag plot representation of random white noise where the datapoints are truly random. Figure taken from the Pandas Plotting blog.__
+__Figure 4. (Top) The *Iris* dataset as a whole is not random, indicating another factor in play, possible genetics. (Bottom) A lag plot representation of random white noise where the datapoints are truly random. Figure taken from the [Pandas Plotting blog](http://pandasplotting.blogspot.com/2012/06/lag-plot.html).__
 
 
 ## Conclusion <a id="conclusion"></a>
