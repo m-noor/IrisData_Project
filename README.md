@@ -174,10 +174,10 @@ This repository is structured as follows:
 2. [Project description](README.md) - this file, a text file (Markdown) containing project background and description of the script.
 3. [Input folder](inputs) - contains the [*Iris* dataset](inputs/iris.data) and a snapshot of the data source [UCI Machine Learning Repository_ Iris Data Set.pdf](inputs/UCI Machine Learning Repository_ Iris Data Set.pdf).
 4. [Output folder](outputs) - contains the standard outputs of the script as described in detail in the Results and Discussion section above.
- 	fig1.png - boxplot
-	fig2.png - scatter matrix
-	fig3.png - parallel coordinates plot
-	fig4.png - lag plot
-	iris_data_summary.txt - text file summarizing the dataset with correlation coefficients
+* 	[fig1.png](outputs/fig1.png) - boxplot
+*	[fig2.png](outputs/fig2.png) - scatter matrix
+*	[fig3.png](outputs/fig3.png) - parallel coordinates plot
+*	[fig4.png](outputs/fig4.png) - lag plot
+*	[iris_data_summary.txt](outputs/iris_data_summary.txt) - text file summarizing the dataset with correlation coefficients
 
 ############## END OF FILE ##############
