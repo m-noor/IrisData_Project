@@ -4,7 +4,12 @@ Programming and Scripting module - Project on the Iris dataset
 
 *By: Mohamed Noor - April 2018*
 
-## Introduction
+___
+## Table of Contents
+* [Introduction](#intro)
+
+
+## Introduction <a id="intro"></a>
 This project is related to the Fisher's Iris dataset, as obtained from the [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/iris)<a href="inputs/UCI Machine Learning Repository_ Iris Data Set.pdf"> (webpage snapshot)</a>.
 
 To analyze the dataset (in statistics term: exploratory data analysis), a script was written in Python 3.6.3 with Visual Studio Community 2017. The main and other well-known libraries were utilized to read the Iris dataset and output the analysis results.
