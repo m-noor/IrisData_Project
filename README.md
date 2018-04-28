@@ -139,21 +139,23 @@ __Figure 1. Boxplots of flower measurements.__
 <img height="70%" width="70%" src="outputs/fig2.png">
 </p>
 
-500px x 399.42291838417
-
 __Figure 2. A pairwise comparison of the relationship between the flower measurements.__
 
 
 * [fig3.png](outputs/fig3.png) - a parallel coordinates plot as an orthogonal method for multivariate analysis, grouped by species. From the plot, it is clear that the petal length of *I. setosa* is distinct from the other two species. This can be used as the first step to distinguish the species. In contrast, the sepal length is not a useful discriminant criterion as there is a significant overlap among the species. To distinguish between *I. versicolor* and *I. virginica*, it is possible to use petal length and petal width as (collectively) the petal dimensions of *I. virginica* are larger than *I. versicolor*.
 
-![fig3.png](outputs/fig3.png)
+<p align="center">
+<img height="70%" width="70%" src="outputs/fig3.png">
+</p>
 
 __Figure 3. A parallel coordinates plot indicating the clustering of flower dimensions for each species.__
 
 
 * [fig4.png](outputs/fig4.png) - a lag plot to examine whether the datasets display a specific structure. If the measurements are truly by nature (not genetics), then the *Iris* dataset should be random, which is not the case with the dataset. Therefore, the petal and sepal dimensions are very likely (as usual) to be determined by genetic components. For comparison, a random structure is shown below the Iris lag plot, taken from the [Pandas Plotting blog](http://pandasplotting.blogspot.com/2012/06/lag-plot.html):
 
-![fig4.png](outputs/fig4.png)
+<p align="center">
+<img height="70%" width="70%" src="outputs/fig4.png">
+</p>
 
 
 ![random white noise](http://1.bp.blogspot.com/-CFi-OrzyX6E/T9NSSHXP5RI/AAAAAAAAAFE/g6QRrB3kwCQ/s1600/white_noise.png)
