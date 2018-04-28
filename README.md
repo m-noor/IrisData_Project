@@ -151,7 +151,7 @@ The *Iris* dataset is easy to work with, as there are no missing values or unusu
 
 If required, this Python script can be easily modified for other datasets, allowing for a higher code reusability.
 
-## Appendix: Usage instructions
+## Appendix 1: Usage instructions
 
 [The script](IrisData_project.py) relies on the `pandas`, `matplotlib` and `tkinter` libraries for calculating the statistical values and for plotting graphs, and therefore these libraries must be installed prior to running the script. If not, the following error will occur:
 
@@ -166,5 +166,12 @@ The three tables (Tables 1-3) displayed in the Results and Discussion section wi
 Following this, the Figures 1-4 will be generated and saved as well.
 The outputs will all be saved on the root drive (in Windows, usually C:\) to a folder named based on the current date (YYYYMMDD) and time (HHMM) - *e.g.* C:\20180402_1424. This assures a unique location each time the script is run, provided there is no time change (*e.g.* summer time).
 
+
+## Appendix 2: Repository structure
+
+This repository is structured as follows:
+1. [Python script](IrisData_project.py) - a Python 3.6 script to automatically process the Iris dataset.
+2. [Project description](README.md) - this file, a text file (Markdown) containing project background and description of the script.
+3.
 
 ############## END OF FILE ##############
