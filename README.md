@@ -188,7 +188,7 @@ The outputs will all be saved on the root drive (in Windows, usually C:\) to a f
 This repository is structured as follows:
 1. [Python script](IrisData_project.py) - a Python 3.6 script to automatically process the *Iris* dataset.
 2. [Project description](README.md) - this file, a text file (Markdown) containing project background and description of the script.
-3. [Input folder](inputs) - contains the [*Iris* dataset](inputs/iris.data) and a snapshot of the <a href="inputs/UCI Machine Learning Repository_ Iris Data Set.pdf"> data source webpage </a>.
+3. [Input folder](inputs) - contains the [*Iris* dataset](inputs/iris.data) and a snapshot of the <a href="inputs/UCI Machine Learning Repository_ Iris Data Set.pdf">data source webpage</a>.
 4. [Output folder](outputs) - contains the standard outputs of the script as described in detail in the Results and Discussion section above.
 * [fig1.png](outputs/fig1.png) - boxplot
 *	[fig2.png](outputs/fig2.png) - scatter matrix
