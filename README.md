@@ -7,8 +7,13 @@ Programming and Scripting module - Project on the Iris dataset
 ___
 ## Table of Contents
 * [Introduction](#intro)
+* [Methods](#methods)
+* [Results](#results)
+* [Conclusion](#conclusion)
+* [Appendix 1: Usage instructions](#app1-usage)
+* [Appendix 2: Repository structure](#app2-repo_structure)
 
-
+___
 ## Introduction <a id="intro"></a>
 This project is related to the Fisher's Iris dataset, as obtained from the [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/iris)<a href="inputs/UCI Machine Learning Repository_ Iris Data Set.pdf"> (webpage snapshot)</a>.
 
@@ -36,7 +41,7 @@ For those of us not well-versed in flowers, the image below shows the sepal and 
 </p>
 
 
-## Methods
+## Methods <a id="methods"></a>
 
 ### Rationale for chosen method
 Among the options considered for designing the project solution was:
@@ -76,7 +81,7 @@ The script performs certain tasks in a logical way as detailed below:
 
 5. Since four plots are generated at 600 dpi resolution (typical resolution for publication), there can be some lag until files are actually written. Therefore, an update on the script status is printed out first and then updated again after saving. 
 
-## Results and Discussion
+## Results and Discussion <a id="results"></a>
 
 At a quick glance at [iris_data_summary.txt](outputs/iris_data_summary.txt), we can see that there are no missing values (150 measurements in total). In addition, petal length displays a high variance - which is further confirmed by the corresponding boxplot. Therefore, petal length could be a really useful variable for species discrimination compared to the other variables. Note that descriptive (textual) statistics are actually better represented by boxplots - after all, a picture is worth a thousand words!
 
@@ -150,13 +155,13 @@ __Figure 3. A parallel coordinates plot indicating the clustering of flower dime
 __Figure 4. (Top) The *Iris* dataset as a whole is not random, indicating another factor in play, possible genetics. (Bottom) A lag plot representation of random white noise where the datapoints are truly random. Figure taken from the Pandas Plotting blog.__
 
 
-## Conclusion
+## Conclusion <a id="conclusion"></a>
 
 The *Iris* dataset is easy to work with, as there are no missing values or unusual data structures. Based on the output tables and figures, the datapoints are not normally distributed except for the sepal width when considering all the species together. The parallel coordinates plot also leads to a clear method to discrimate the species, whereby *I. setosa* flowers have their own petal dimension cluster (1-2 cm for length and 0.1-0.8 cm for width). The other two species have a slight overlap in their petal dimensions, although *I. versicolor* petal length is mostly about 3-5 cm and width is 1-2 cm, and *I. virginica* is about 4.5-7 cm (length) and 1.5-2.5 cm.
 
 If required, this Python script can be easily modified for other datasets, allowing for a higher code reusability.
 
-## Appendix 1: Usage instructions
+## Appendix 1: Usage instructions <a id="app1-usage"></a>
 
 [The script](IrisData_project.py) relies on the `pandas`, `matplotlib` and `tkinter` libraries for calculating the statistical values and for plotting graphs, and therefore these libraries must be installed prior to running the script. If not, the following error will occur:
 
@@ -172,7 +177,7 @@ Following this, the Figures 1-4 will be generated and saved as well.
 The outputs will all be saved on the root drive (in Windows, usually C:\) to a folder named based on the current date (YYYYMMDD) and time (HHMM) - *e.g.* C:\20180402_1424. This assures a unique location each time the script is run, provided there is no time change (*e.g.* summer time).
 
 
-## Appendix 2: Repository structure
+## Appendix 2: Repository structure <a id="app2-repo_structure"></a>
 
 This repository is structured as follows:
 1. [Python script](IrisData_project.py) - a Python 3.6 script to automatically process the *Iris* dataset.
