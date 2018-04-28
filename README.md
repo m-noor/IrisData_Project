@@ -138,8 +138,10 @@ __Figure 1. Boxplots of flower measurements.__
 ![fig2.png](outputs/fig2.png)
 
 <p align="center">
-<img height="598" width="478" src="outputs/fig2.png">
+<img height="20%" width="20%" src="outputs/fig2.png">
 </p>
+
+500px x 399.42291838417
 
 __Figure 2. A pairwise comparison of the relationship between the flower measurements.__
 
