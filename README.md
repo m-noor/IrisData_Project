@@ -8,7 +8,7 @@ ___
 ## Table of Contents
 * [Introduction](#intro)
 * [Methods](#methods)
-* [Results](#results)
+* [Results and Discussion](#results)
 * [Conclusion](#conclusion)
 * [Appendix 1: Usage instructions](#app1-usage)
 * [Appendix 2: Repository structure](#app2-repo_structure)
