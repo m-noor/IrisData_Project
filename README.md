@@ -173,13 +173,11 @@ This repository is structured as follows:
 1. [Python script](IrisData_project.py) - a Python 3.6 script to automatically process the *Iris* dataset.
 2. [Project description](README.md) - this file, a text file (Markdown) containing project background and description of the script.
 3. [Input folder](inputs) - contains the [*Iris* dataset](inputs/iris.data) and a snapshot of the data source [UCI Machine Learning Repository_ Iris Data Set.pdf](inputs/UCI Machine Learning Repository_ Iris Data Set.pdf).
-4. [Output folder](outputs) - 
-
- 	fig1.png
-	fig2.png
-	fig3.png
-	fig4.png
-	iris_data_summary.txt
-
+4. [Output folder](outputs) - contains the standard outputs of the script as described in detail in the Results and Discussion section above.
+ 	fig1.png - boxplot
+	fig2.png - scatter matrix
+	fig3.png - parallel coordinates plot
+	fig4.png - lag plot
+	iris_data_summary.txt - text file summarizing the dataset with correlation coefficients
 
 ############## END OF FILE ##############
