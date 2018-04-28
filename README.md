@@ -158,7 +158,7 @@ __Figure 3. A parallel coordinates plot indicating the clustering of flower dime
 </p>
 
 
-![random white noise](http://1.bp.blogspot.com/-CFi-OrzyX6E/T9NSSHXP5RI/AAAAAAAAAFE/g6QRrB3kwCQ/s1600/white_noise.png)
+![random white noise](http://1.bp.blogspot.com/-CFi-OrzyX6E/T9NSSHXP5RI/AAAAAAAAAFE/g6QRrB3kwCQ/s600/white_noise.png)
 
 __Figure 4. (Top) The *Iris* dataset as a whole is not random, indicating another factor in play, possible genetics. (Bottom) A lag plot representation of random white noise where the datapoints are truly random. Figure taken from the Pandas Plotting blog.__
 
@@ -192,7 +192,7 @@ This repository is structured as follows:
 2. [Project description](README.md) - this file, a text file (Markdown) containing project background and description of the script.
 3. [Input folder](inputs) - contains the [*Iris* dataset](inputs/iris.data) and a snapshot of the data source [UCI Machine Learning Repository_ Iris Data Set.pdf](inputs/UCI Machine Learning Repository_ Iris Data Set.pdf).
 4. [Output folder](outputs) - contains the standard outputs of the script as described in detail in the Results and Discussion section above.
-* 	[fig1.png](outputs/fig1.png) - boxplot
+* [fig1.png](outputs/fig1.png) - boxplot
 *	[fig2.png](outputs/fig2.png) - scatter matrix
 *	[fig3.png](outputs/fig3.png) - parallel coordinates plot
 *	[fig4.png](outputs/fig4.png) - lag plot
