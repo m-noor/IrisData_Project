@@ -138,7 +138,7 @@ __Figure 1. Boxplots of flower measurements.__
 ![fig2.png](outputs/fig2.png)
 
 <p align="center">
-<img height="50%" width="50%" src="outputs/fig2.png">
+<img height="70%" width="70%" src="outputs/fig2.png">
 </p>
 
 500px x 399.42291838417
